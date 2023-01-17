@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="scroll">
+    <!-- Menú header -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"> Silvana Alfonso</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li> <a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li> <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li> <a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <!-- <li> <a href="#Proyectos">PROYECTOS</li> -->
+                </ul>
+            </nav>
+            <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- Seccion inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="FotoPerfil.jpg">
+            </div>
+            <h1>Silvana Alfonso</h1>
+            <h2>Tester & Frontend developer </h2>
+            <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion sobre mí -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2> Sobre mí</h2>
+            <p> <span> Hola, soy Silvana,</span> tengo 26 años, me presento como una persona flexible y responsable,
+                cuento con capacidad para el trabajo en equipo, adaptación a los cambios, toma de decisiones,
+                creatividad y el aprendizaje continuo.
+                Mi objetivo laboral es formar parte de una empresa que me brinde la oportunidad de demostrar mis
+                habilidades y competencias en el puesto Frontend y que a su vez me ayude a ampliar mis conocimientos
+                permitiéndome crecer en el ámbito laboral y personal.</p>
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento:</strong>
+                            16/02/1996
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            alfonsosilvana16@gmail.com
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            3412290622
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Sta Fe, Argentina.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <button> Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- Seccion skills -->
+    <seccion class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical skills -->
+                <div class="col">
+                    <h3>Hard skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Html</span>
+                        <div class="barra-skill">
+                            <div class="progreso html">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso css">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <div class="barra-skill">
+                            <div class="progreso github">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso git">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Inglés</span>
+                        <div class="barra-skill">
+                            <div class="progreso ingles">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- professional skills -->
+                <div class="col">
+                    <h3>Soft skills</h3>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso Trabajo-en-equipo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso Comunicacion">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Organización</span>
+                        <div class="barra-skill">
+                            <div class="progreso Organizacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Automotivación</span>
+                        <div class="barra-skill">
+                            <div class="progreso Automotivacion">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Meticulosidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso Meticulosidad">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </seccion>
+    <!-- Seccion Curriculum -->
+    <seccion id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2> 
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4> Escuela nº 8083, María Bicecci </h4>
+                        <span class="cargo"> Secundario completo.</span>
+                        <span class="fecha">Fecha: 2012 - 2014 </span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Universidad Fasta </h4>
+                        <span class="cargo"> Auxiliar de farmacia.</span>
+                        <span class="fecha">Fecha: 2019 - 2020 </span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Universidad
+                            Tecnológica Nacional, Bs As. </h4>
+                        <span class="cargo"> Professional Testing Máster.</span>
+                        <span class="fecha">Fecha: 08/2021 - 10/2021 </span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+
+                    </div>
+                    <div class="item izq">
+                        <h4> Estudios de manera autodidacta.</h4>
+                        <span class="cargo"> Desarrollo web - HTML, CSS y BOOTSTRAP | Udemy</span>
+                        <span class="cargo"> FrontEnd developer | Udemy </span>
+                        <span class="cargo"> Html / Css / Javascript ( JS en curso) | @SoyDalto (YT) </span>
+                        <span class="cargo"> Html, Css y Javascript | Arg. prog. 4.0 + Ticmas academy </span>
+                        <span class="cargo"> BOOTCAMP FRONT E (en curso) | Arg. prog. 4.0 + MindHub </span>
+                        <span class="fecha">Fecha: 10/2021 - Actualidad </span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4> Mordisco Bar.</h4>
+                        <span class="cargo"> Atención al cliente, bachera, limpieza.</span>
+                        <p> Recepción y atención al cliente a la mesa, toma de pedidos, armado de mesas y salón,
+                            servicio,
+                            limpieza y desinfección de vajilla, reposición de mercadería, limpieza de lugar.</p>
+                        <span class="fecha">Fecha: 03/2020 - 11/2020 </span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> Autocrédito s.a proyecto sur. </h4>
+                        <span class="cargo">Vendedora, seguimiento al asociado.</span>
+                        <p> Ruteo, venta de planes de ahorro, atención personalizada al cliente.</p>
+                        <span class="fecha">Fecha: 2019 </span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> Peluquería canina Mr. Peabody</h4>
+                        <span class="cargo"> Microemprendimiento.</span>
+                        <p> Proyecto auto gestionado. Administración del negocio, atención al
+                            cliente, captación de nuevos clientes, peluquería.</p>
+                        <span class="fecha">Fecha: 2015 - 2019 </span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> Victia indumentaria.</h4>
+                        <span class="cargo">Atención al cliente.</span>
+                        <p> Armado de vidrieras y maniquí, actualización de precios, etiquetado y
+                            reposición de prendas, asesoramiento de imagen, venta y atención al
+                            cliente, manejo de caja, efectivo y posnet.
+                        </p>
+                        <span class="fecha">Fecha: 2015 - 2016 </span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </seccion>
+
+</div>
+<script src="function.js"></script>
+</body>
+
+</html>
